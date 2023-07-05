@@ -96,6 +96,8 @@ composer require symfony/requirements-checker
 APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
 ```
 
+## Pour plus d'informations, reférez vous à la [documentation officiel de symfony][symfony]
+
 ## Enfin connecter vous à votre projet en saisiant votre nom de domaine dans le navigateur de votre choix :
 
 <p align="right">Back to top :
@@ -106,4 +108,5 @@ APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
 
 <h1 align="center">Bon Code 🖥 💻 📱</h1>
 
+[symfony]: https://symfony.com/doc/current/deployment.html#symfony-deployment-basics
 
