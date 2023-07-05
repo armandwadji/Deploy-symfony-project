@@ -1,7 +1,7 @@
 
 <div>
   <h1 align="center" position="relative">
-    <a  href="https://github.com/armandwadji/CUSTOM-TERMINAL.git">DEPLOY SYMFONY PROJECT 🖲
+    <a  href="https://github.com/armandwadji/Deploy-symfony-project.git">DEPLOY SYMFONY PROJECT 🖲
     </a> 
   </h1> 
 </div> 
