@@ -45,7 +45,7 @@ Dans notre cas, nous voulons deployé la branche `main` (anciennement aussi nomm
 
 ## Maintenant installer les dépendances de votre projet mais en mode production avec la commande :
 ```
-composer install --no-dev --optimize-autoloader
+export APP_ENV=prod && composer install --no-dev --optimize-autoloader
 ```
 Un dossier `vendor` contenant toute les dépendances de notre projet à été créer.
 
@@ -62,6 +62,7 @@ cette commande créer un fichier .env.local.php à partir des informations prés
 ## Exemple: connection base de donnée, ...
 pour cela vous devez vous rendre dans l'option `Base de données MYSQL` pour créer une base de donnée et y attribuer un utilisateur.
 Veuillez à bien conserver les informations tels que `nom de la base de donnée`, `nom de l'utilisateur`, `mot de passe de l'utilisateur`. Elles vous seront utiles pour la suite.
+Il est important d'ajouter l'utilisateur créé à la base de données créée pour lui donner les droits nécessaires.
 
 <div style="display: flex; flex-direction: row;">
   <img width="500px" height='400px' alt="create database" src="https://github.com/armandwadji/Deploy-symfony-project/assets/90448006/7eb2a267-0a9c-4136-b4ea-a15ceac27c4a">
@@ -70,7 +71,9 @@ Veuillez à bien conserver les informations tels que `nom de la base de donnée`
 
 une fois la base de donnée et l'utilsateur crées, il vous suffit d'édité le fichier `.env.local.php` pour y inscrire les information de connection de votre projet à cette base.
 Vous pouvez utilisé des éditeurs tels que `vim` ou `nano`. Dans notre cas nous utiliserons `nano`.
-
+```
+nano .env.local.php
+```
 <img alt="connexion database" src="https://github.com/armandwadji/Deploy-symfony-project/assets/90448006/46b93725-4c95-4e58-a397-144492ee8758">
 
 ##Aller dans les paramètres de votre nom de domaine:
