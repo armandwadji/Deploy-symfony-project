@@ -45,7 +45,7 @@ Dans notre cas, nous voulons deployé la branche `main` (anciennement aussi nomm
 
 ## Maintenant installer les dépendances de votre projet mais en mode production avec la commande :
 ```
-export APP_ENV=prod && composer install --no-dev --optimize-autoloader
+composer install --no-dev --optimize-autoloader
 ```
 Un dossier `vendor` contenant toute les dépendances de notre projet à été créer.
 
